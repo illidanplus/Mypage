@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta content="en-us" http-equiv="Content-Language">
 <meta name="viewport" content="width=device-width, initial-scale=0.9">
 <title id="title">time</title>
@@ -46,7 +48,7 @@ document.getElementById("title").innerHTML="还能睡会!";
 }
 
 /*翻译主页整体样式 
-文本对齐︰ 居中;
+文本对齐︰ 中心;
 背景色︰ #f1f6ee 
 使用夜间默认时修改为#000000即可
 */
@@ -287,7 +289,7 @@ span {
 以下.title仅设置一言标题本身，与一言内容无关！包括标准在内可以不要！
 */
 .title {
-    background-color: #fffffff;
+    background-color: transparent;
     font-size: 16px;
     height: 30px;
     line-height: 30px;
@@ -537,7 +539,8 @@ li{
 	padding: 0 13px 0 13px
 }
 
-</style><style>html, * {-webkit-user-select:text!important; -moz-user-select:text!important;}</style></head>
+</style>
+<style>html, * {-webkit-user-select:text!important; -moz-user-select:text!important;}</style>
 
 
 <body>
@@ -655,6 +658,7 @@ li{
 <p class="url">主页收集</p>
 </div>
 
+<!--下面是随机今日诗词！-->
 <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
 <div id="poem_sentence"></div>
 <div id="poem_info"></div>
@@ -669,6 +673,7 @@ li{
 
 <br>
 
+<!--下面两行是随机一言！-->
 <p id="hitokoto"></p>
 <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
 
